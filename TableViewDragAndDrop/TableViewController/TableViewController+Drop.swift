@@ -30,10 +30,10 @@ extension TableViewController: UITableViewDropDelegate {
             if session.items.count > 1 {
                 return UITableViewDropProposal(operation: .cancel)
             } else {
-                return UITableViewDropProposal(dropOperation: .move, intent: .insertAtDestinationIndexPath)
+                return UITableViewDropProposal(operation: .move, intent: .insertAtDestinationIndexPath)
             }
         } else {
-            return UITableViewDropProposal(dropOperation: .copy, intent: .insertAtDestinationIndexPath)
+            return UITableViewDropProposal(operation: .copy, intent: .insertAtDestinationIndexPath)
         }
     }
     

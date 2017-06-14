@@ -33,8 +33,8 @@
 		147BE9371EBA819400356243 /* TableViewController+Drag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableViewController+Drag.swift"; sourceTree = "<group>"; };
 		147BE9381EBA819400356243 /* TableViewController+Drop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableViewController+Drop.swift"; sourceTree = "<group>"; };
 		147BE93E1EBA819D00356243 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		BC0072A2D6B9E92EDCA7E084 /* SampleCode.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
-		DEB24D822C53CAD6826AF214 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		D1579DE2D6F0C828856ED802 /* SampleCode.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		E73851F69DE4E27E8FD9B4A0 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +76,8 @@
 				1401858C1ECA536800BFA64D /* README.md */,
 				147BE9231EBA818300356243 /* TableViewDragAndDrop */,
 				147BE9221EBA818300356243 /* Products */,
-				5C53BE1AE09E62BC1D77367D /* Configuration */,
-				4DF596B7AEA49D6E17E1FD88 /* LICENSE */,
+				A0728E6800D23CDB781FB747 /* Configuration */,
+				2AABBBAEF3E494C6861D3B57 /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,19 +109,19 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		4DF596B7AEA49D6E17E1FD88 /* LICENSE */ = {
+		2AABBBAEF3E494C6861D3B57 /* LICENSE */ = {
 			isa = PBXGroup;
 			children = (
-				DEB24D822C53CAD6826AF214 /* LICENSE.txt */,
+				E73851F69DE4E27E8FD9B4A0 /* LICENSE.txt */,
 			);
 			name = LICENSE;
 			path = LICENSE;
 			sourceTree = "<group>";
 		};
-		5C53BE1AE09E62BC1D77367D /* Configuration */ = {
+		A0728E6800D23CDB781FB747 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				BC0072A2D6B9E92EDCA7E084 /* SampleCode.xcconfig */,
+				D1579DE2D6F0C828856ED802 /* SampleCode.xcconfig */,
 			);
 			name = Configuration;
 			sourceTree = "<group>";
@@ -235,7 +235,7 @@
 /* Begin XCBuildConfiguration section */
 		147BE9311EBA818300356243 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC0072A2D6B9E92EDCA7E084 /* SampleCode.xcconfig */;
+			baseConfigurationReference = D1579DE2D6F0C828856ED802 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -287,7 +287,7 @@
 		};
 		147BE9321EBA818300356243 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC0072A2D6B9E92EDCA7E084 /* SampleCode.xcconfig */;
+			baseConfigurationReference = D1579DE2D6F0C828856ED802 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -332,7 +332,7 @@
 		};
 		147BE9341EBA818300356243 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC0072A2D6B9E92EDCA7E084 /* SampleCode.xcconfig */;
+			baseConfigurationReference = D1579DE2D6F0C828856ED802 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -349,7 +349,7 @@
 		};
 		147BE9351EBA818300356243 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC0072A2D6B9E92EDCA7E084 /* SampleCode.xcconfig */;
+			baseConfigurationReference = D1579DE2D6F0C828856ED802 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";

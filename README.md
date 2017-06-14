@@ -7,11 +7,12 @@ This sample code project uses a [`UITableView`](https://developer.apple.com/docu
 
 To enable drag and drop, you specify the table view as its own drag delegate and drop delegate. To provide or consume data, you implement the drag and drop delegate methods.
 
+Adopting drag and drop in a table view differs in some important ways compared to the process you follow for a custom view. To compare the steps, see [Adopting Drag and Drop in a Custom View](https://developer.apple.com/documentation/uikit/drag_and_drop/adopting_drag_and_drop_in_a_custom_view).
+
 ## Get Started
 Deploy this project on iPad, which supports drag and drop between apps. When you first launch this project’s built app, you see a table with several rows, each with a text string. Use this app along with a second app that supports editing of text strings, such as Reminders. For example, configure the iPad screen to Split View, with this app side by side with Reminders. Then drag a row from this app into Reminders, or drag a reminder into this app.
 
 This app also supports rearranging rows in the table by dragging a row up or down. However, rearrangement in this app uses the traditional [`tableView(canMoveRowAt:)`](https://developer.apple.com/documentation/uikit/uitableviewdatasource/1614927-tableview) and [`tableView(moveRowAt:to:)`](https://developer.apple.com/documentation/uikit/uitableviewdatasource/1614867-tableview) methods rather than the drag and drop API.
-
 
 ## Enable Drag and Drop Interactions
 To enable dragging, dropping, or both, specify a table view as its own drag or drop delegate. A convenient place for this code is in an app’s [`viewDidLoad()`](https://developer.apple.com/documentation/uikit/uiviewcontroller/1621495-viewdidload) method. This code enables both dragging and dropping:
@@ -84,10 +85,10 @@ func tableView(_ tableView: UITableView, dropSessionDidUpdate session: UIDropSes
         if session.items.count > 1 {
             return UITableViewDropProposal(operation: .cancel)
         } else {
-            return UITableViewDropProposal(dropOperation: .move, intent: .insertAtDestinationIndexPath)
+            return UITableViewDropProposal(operation: .move, intent: .insertAtDestinationIndexPath)
         }
     } else {
-        return UITableViewDropProposal(dropOperation: .copy, intent: .insertAtDestinationIndexPath)
+        return UITableViewDropProposal(operation: .copy, intent: .insertAtDestinationIndexPath)
     }
 }
 ```
