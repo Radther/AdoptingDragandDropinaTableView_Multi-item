@@ -17,4 +17,8 @@ extension TableViewController: UITableViewDragDelegate {
     func tableView(_ tableView: UITableView, itemsForBeginning session: UIDragSession, at indexPath: IndexPath) -> [UIDragItem] {
         return model.dragItems(for: indexPath)
     }
+    
+    func tableView(_ tableView: UITableView, itemsForAddingTo session: UIDragSession, at indexPath: IndexPath, point: CGPoint) -> [UIDragItem] {
+        return model.dragItems(for: indexPath)
+    }
 }

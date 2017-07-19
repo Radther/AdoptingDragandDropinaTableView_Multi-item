@@ -27,11 +27,7 @@ extension TableViewController: UITableViewDropDelegate {
     func tableView(_ tableView: UITableView, dropSessionDidUpdate session: UIDropSession, withDestinationIndexPath destinationIndexPath: IndexPath?) -> UITableViewDropProposal {
         // The .move operation is available only for dragging within a single app.
         if tableView.hasActiveDrag {
-            if session.items.count > 1 {
-                return UITableViewDropProposal(operation: .cancel)
-            } else {
-                return UITableViewDropProposal(operation: .move, intent: .insertAtDestinationIndexPath)
-            }
+            return UITableViewDropProposal(operation: .move, intent: .insertAtDestinationIndexPath)
         } else {
             return UITableViewDropProposal(operation: .copy, intent: .insertAtDestinationIndexPath)
         }
